@@ -99,7 +99,7 @@ enable the game camera and perform modifications in the game scene to make it ab
 
 * `bf_target_trigger` - the target custom trigger index to optimise for. A possible target trigger does not need to be passed by the bruteforced replay. The first trigger has an index of `1`, second - `2` and so on. By default this is `-1`.
 
-* `bf_trigger_eval` - the evaluation strategy used for evaluting triggers. The default strategy is `distance` which compares the closest distance to the trigger against the previous result. `distance,velocity` first compares the distance, and if it is close enough, will evaluate velocity. `velocity`  will only compare only raw velocity after hitting the trigger. Pseudocode of the evaluation:
+* `bf_trigger_eval` - the evaluation strategy used for evaluating triggers. The default strategy is `distance` which compares the closest distance to the trigger against the previous result. `distance,velocity` first compares the distance, and if it is close enough, will evaluate velocity. `velocity`  will only compare only raw velocity after hitting the trigger. Pseudocode of the evaluation:
 ```py
 if strategy == 'distance' or strategy == 'distance,velocity':
     if time < prev.time:
